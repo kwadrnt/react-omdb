@@ -9,14 +9,14 @@ class SearchContainer extends Component {
     }
   }
 
-  inputChange () {
+  inputChange (event) {
     console.log('searching a movie')
     this.setState({
       query: event.target.value
     })
   }
 
-  formSubmit () {
+  formSubmit (event) {
     event.preventDefault();
     console.log('form works!')
   }
